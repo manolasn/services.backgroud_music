@@ -1,5 +1,7 @@
 # services.backgroud_music
-Use services to play background music in all activities without restarting it everytime when activity starts!
+How to use services to play background music in all activities without restarting it everytime when activity starts!
+
+Watch my video tutorial!!! https://youtu.be/nwPmuIrrsoA
 
 1. Create MusicService.class for our SERVICE:
 
@@ -161,10 +163,7 @@ void doUnbindService()
     }
 }
 ```
-
-
    b) Inside onCreate() method: Bind music service
-   
    
    ```
    doBindService();
