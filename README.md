@@ -161,7 +161,10 @@ void doUnbindService()
     }
 }
 ```
+
+
    b) Inside onCreate() method: Bind music service
+   
    
    ```
    doBindService();
