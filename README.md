@@ -129,6 +129,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
     android:enabled="true" />
 ```
 3. Set up your Activity:
+
    a) Outside onCreate() method: Bind/Unbind music service.
   ```
    private boolean mIsBound = false;
