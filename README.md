@@ -1,5 +1,5 @@
 # services.backgroud_music
-Use services to play music in background in all activities, without restarting it!
+Use services to play background music in all activities, without restarting it!
 
 1. Create MusicService.class for our SERVICE:
 
