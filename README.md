@@ -2,6 +2,8 @@
 Using services to play music in background in all activities!
 How to play the same BACKGROUND MUSIC across all activities:
 1)	Create MusicService.class for our SERVICE:
+
+
 public class MusicService extends Service implements MediaPlayer.OnErrorListener {
 
     private final IBinder mBinder = new ServiceBinder();
