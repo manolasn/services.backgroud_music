@@ -162,6 +162,7 @@ void doUnbindService()
 }
 ```
    b) Inside onCreate() method: Bind music service
+   
    ```
    doBindService();
 Intent music = new Intent();
