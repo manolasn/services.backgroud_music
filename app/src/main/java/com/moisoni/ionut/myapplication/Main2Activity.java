@@ -90,6 +90,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        mHomeWatcher.startWatch();
         if (mServ != null) {
             mServ.resumeMusic();
         }
@@ -99,6 +100,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
+        mHomeWatcher.stopWatch();
         //Detect idle screen
         PowerManager pm = (PowerManager)
                 getSystemService(Context.POWER_SERVICE);

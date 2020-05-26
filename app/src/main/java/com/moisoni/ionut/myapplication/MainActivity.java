@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        mHomeWatcher.startWatch();
+
         if (mServ != null) {
             mServ.resumeMusic();
         }
@@ -99,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+
+        mHomeWatcher.stopWatch();
 
         //Detect idle screen
         PowerManager pm = (PowerManager)

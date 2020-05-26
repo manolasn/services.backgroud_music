@@ -13,17 +13,17 @@ public class HomeWatcher {
     private OnHomePressedListener mListener;
     private InnerRecevier mRecevier;
 
-    public HomeWatcher(Context context) {
+    HomeWatcher(Context context) {
         mContext = context;
         mFilter = new IntentFilter(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
     }
 
-    public void setOnHomePressedListener(OnHomePressedListener listener) {
+    void setOnHomePressedListener(OnHomePressedListener listener) {
         mListener = listener;
         mRecevier = new InnerRecevier();
     }
 
-    public void startWatch() {
+    void startWatch() {
         if (mRecevier != null) {
             mContext.registerReceiver(mRecevier, mFilter);
         }
